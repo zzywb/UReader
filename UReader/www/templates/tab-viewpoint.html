@@ -1,120 +1,153 @@
 <ion-view view-title="观点" hide-nav-bar="true">
 	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		/*导航图标*/
 		.bar div img{
-			width: 0.6rem;height: 0.6rem;
+			width: 0.5rem;height: 0.5rem;
 		}
-		.swiper-containerlunbo{
-			height: auto;
-		}
+		/*Tab切换*/
 		#swiper-container2{
 				height: auto;
+				font-size: 0.3rem;
+			}
+		#swiper-container3 div {
+				height: 10rem;
 				font-size: 0.5rem;
 			}
-			#swiper-container3 div {
-				height: 5rem;
-				background: red;
-				font-size: 0.5rem;
-			}
-			.active-nav{
+		.active-nav{
 				border-bottom: 3px solid #e54d42;
 				color: black;
-				text-align: center;
 			}
+		/*轮播高度*/
+		.lunbohg{
+			width:100%;
+			height:4.3rem !important;
+			}
+		/*轮播图片高度*/
+		.lunbohg img{
+			width: 100%;
+			height:4.3rem;
+		}
+		/*logo图标*/
+		.row{
+			text-align: center;
+		}
+		.col div i{
+			font-size: 1rem;
+		}
+		.col h2{
+			font-size: 0.3rem;
+		}
+		.col h1{
+			font-size: 0.22rem;
+		}
 	</style>
 	<div class="bar bar-header" >
     	<div><img src="img/logo.png"/></div>
 		    <div class="swiper-container swiper-container-horizontal" id="swiper-container2" >
-				<div class="swiper-wrapper" style="color:#808080;">
-					<div class="swiper-slide active-nav" style="">
-						军事</div>
-					<div class="swiper-slide" style="">
-						科技</div>
-					<div class="swiper-slide" style="">
-						旅游</div>
-					<div class="swiper-slide" style="">
-						体育</div>
-					<div class="swiper-slide" style="">
-						财经</div>
-					<div class="swiper-slide" style="">
-						IT</div>
-					<div class="swiper-slide" style="">
-						健康</div>
-					<div class="swiper-slide" style="">
-						教育</div>
-					<div class="swiper-slide" style="">
-						美食</div>
-					<div class="swiper-slide" style="">
-						商业</div>
-					<div class="swiper-slide" style="">
-						社会</div>	
-					<div class="swiper-slide" style="">
-						生活</div>
-					<div class="swiper-slide" style="">
-						汽车</div>
-					<div class="swiper-slide" style="">
-						文史</div>
-					<div class="swiper-slide" style="">
-						文学</div>
-					<div class="swiper-slide" style="">
-						娱乐</div>		
-				</div>
+				<ul class="swiper-wrapper" style="color:#808080;">
+					<li class="swiper-slide active-nav" style="text-align: center;">
+						军事</li>
+					<li class="swiper-slide" style="text-align: center;">
+						科技</li>
+					<li class="swiper-slide" style="text-align: center;">
+						旅游</li>
+					<li class="swiper-slide" style="text-align: center;">
+						体育</li>
+					<li class="swiper-slide" style="text-align: center;">
+						财经</li>
+					<li class="swiper-slide" style="text-align: center;">
+						IT</li>
+					<li class="swiper-slide" style="text-align: center;">
+						健康</li>
+					<li class="swiper-slide" style="text-align: center;">
+						教育</li>
+					<li class="swiper-slide" style="text-align: center;">
+						美食</li>
+					<li class="swiper-slide" style="text-align: center;">
+						商业</li>
+					<li class="swiper-slide" style="text-align: center;">
+						社会</li>	
+					<li class="swiper-slide" style="text-align: center;">
+						生活</li>
+					<li class="swiper-slide" style="text-align: center;">
+						汽车</li>
+					<li class="swiper-slide" style="text-align: center;">
+						文史</li>
+					<li class="swiper-slide" style="text-align: center;">
+						文学</li>
+					<li class="swiper-slide" style="text-align: center;">
+						娱乐</li>		
+				</ul>
 			</div>
 		<div><img src="img/logo.png"/></div>
 	</div>
 
 
-<ion-content class="has-header">
+<ion-content >
   	
 <div class="swiper-container swiper-container-horizontal" id="swiper-container3" >
 	<div class="swiper-wrapper" >
-		<div class="swiper-slide" >
-			<div class="swiper-containerlunbo">
-		  <div class="swiper-wrapper" style="">
-		    <div class="swiper-slide">
-		    	<img src="img/view01.jpg"/>
-		    </div>
-		    <div class="swiper-slide">
-		    	<img src="img/view02.jpg"/>
-		    </div>
-		    <div class="swiper-slide">
-		    	<img src="img/view03.jpg"/>
-		    </div>
-		  </div>
-  	</div>
+	<div class="swiper-slide" >
+		<div class="swiper-containerlunbo lunbohg" style="overflow: hidden;margin-top: 0.85rem;">
+		<div class="swiper-wrapper " >
+		<div class="swiper-slide swiper-no-swiping  lunbohg" ><img src="img/view01.jpg" /></div>
+		<div class="swiper-slide swiper-no-swiping  lunbohg" ><img src="img/view02.jpg" /></div>
+		<div class="swiper-slide swiper-no-swiping  lunbohg" ><img src="img/view03.jpg" /></div>
 		</div>
-		<div class="swiper-slide red-slide">
-			slider2</div>
-		<div class="swiper-slide orange-slide">
-			slider3</div>
-		<div class="swiper-slide blue-slide" >
-			slider4</div>
-		<div class="swiper-slide red-slide">
-			slider5</div>
-		<div class="swiper-slide orange-slide" >
-			slider6</div>
-		<div class="swiper-slide blue-slide" >
-			slider7</div>
-		<div class="swiper-slide red-slide" >
-			slider8</div>
+		</div>
+		  
+      
+	</div>
+		<div class="swiper-slide ">
+		
+		</div>
+		<div class="swiper-slide ">
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide ">
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide" >
+		
+		</div>
+		<div class="swiper-slide ">
+		
+		</div>
+		<div class="swiper-slide ">
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide ">
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
+		<div class="swiper-slide " >
+		
+		</div>
 		<div class="swiper-slide" >
 			
 		</div>
-		<div class="swiper-slide red-slide">
-			slider2</div>
-		<div class="swiper-slide orange-slide">
-			slider3</div>
-		<div class="swiper-slide blue-slide" >
-			slider4</div>
-		<div class="swiper-slide red-slide">
-			slider5</div>
-		<div class="swiper-slide orange-slide" >
-			slider6</div>
-		<div class="swiper-slide blue-slide" >
-			slider7</div>
-		<div class="swiper-slide red-slide" >
-			slider8</div>
 	</div>
 </div>
   </ion-content>
 </ion-view>
-

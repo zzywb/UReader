@@ -39,37 +39,38 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   // Each tab has its own nav history stack:
-
+//观点
   .state('tab.viewpoint', {
     url: '/viewpoint',
     views: {
       'tab-viewpoint': {
         templateUrl: 'templates/tab-viewpoint.html',
-        controller: 'DashCtrl'
+        controller: 'viewpointCtrl'
       }
     }
   })
-
+//发现
   .state('tab.discover', {
       url: '/discover',
       views: {
         'tab-discover': {
           templateUrl: 'templates/tab-discover.html',
-          controller: 'ChatsCtrl'
+          controller: 'discoverCtrl'
         }
       }
     })
    
-
+//书架
   .state('tab.bookrack', {
     url: '/bookrack',
     views: {
       'tab-bookrack': {
         templateUrl: 'templates/tab-bookrack.html',
-        controller: 'AccountCtrl'
+        controller: 'bookrackCtrl'
       }
     }
   })
+ //个人中心
 .state('tab.personal', {
     url: '/personal',
     views: {
@@ -79,6 +80,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+//登录页面
+.state("tab.login",{
+		url:"/login",
+		views:{
+			'tab-personal':{
+				templateUrl:'templates/tab-login.html',
+				controller:'loginCtrl'
+			}
+		}
+		
+	})
+//注册页面
+.state("tab.register",{
+		url:"/register",
+		views:{
+			'tab-personal':{
+				templateUrl:'templates/tab-register.html',
+				controller:'registerCtrl'
+			}
+		}
+		
+	})
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/viewpoint');
 
